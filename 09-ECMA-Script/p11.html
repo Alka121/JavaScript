@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA-SCRIPT</title>
+</head>
+<body>
+    <center>
+        <h1>Array join -> Object Array</h1>
+    </center>
+    <hr>
+    <script>
+        let c1 = [
+            {
+                //key:value ,property =>pops
+                id:123,
+                name:'Manoj',
+                email:'Manoj@gmail.com'
+            },
+            {
+                id:124,
+                name:'Raju',
+                email:'Raju@gmail.com'
+            },
+            {
+                id:233,
+                name:'Mohan',
+                email:'Mohan@gmail.com'
+            },
+            {
+                id:155,
+                name:'suma',
+                email:'suma@gmail.com'
+            }
+        ];
+        let c3 = [
+            {
+                id:334,
+                name:'Radha',
+                email:'Radha@gmail.com'
+            },
+            ...c1,
+            ...c2
+        ];
+        console.log('c1', c1);
+        console.log('c2', c2);
+        console.log('c3', c3);
+
+    </script>
+</body>
+</html>

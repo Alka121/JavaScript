@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Class</h1>
+        <h3>Class Es-6->group of Objects (State and behaviour)</h3>
+        <p>State=>variables-> properties</p>
+        <p>Behaviour => methods</p>
+    </center>
+    <hr>
+
+    <h3>Class syntax contains two components</h3>
+    <ol>
+        <li>Class Declarations</li>
+        <li>Class Expressions</li>
+    </ol>
+
+    <script>
+        document.write(`<h3>Class Declarations</h3>`);
+
+        class Test{
+            constructor(){
+            document.write('<h1>Welcome to Test Class</h1>')
+        }
+    }
+        let test = new Test();
+
+        class Student1{
+            constructor(){}
+            getBepractical(){
+                let text="This is The getBepractical Method...!";
+                document.write(`<h1>${text}</h1>`)
+            }
+            
+        }
+        let student1 = new Student1();
+        student1.getBepractical();
+
+        
+    </script>
+</body>
+</html>

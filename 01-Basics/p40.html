@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Basics</title>
+</head>
+<body>
+    <center>
+        <h1>Object Array</h1>
+    </center>
+    <hr>
+
+    <script>
+        let users = [
+            {
+                id:1,
+                name:"srikantth",
+                email:"Srikan23@gamil.com",
+                age:30
+
+            },
+            {
+                id:2,
+                name:"Alka",
+                email:"Alka23@gamil.com",
+                age:33
+
+            },
+            {
+                id:3,
+                name:"Ambikh",
+                email:"Ambrikh23@gamil.com",
+                age:30
+
+            }
+        ];//litrel type of array:
+        document.write(`<p> Users ARRAY: ${ users }</p>`);
+        document.write(`<p> Users[0]: ${ users[0] }</p>`);
+        document.write(`<p> Users[0]: ${ users[1] }</p>`);
+        document.write(`<p> Users ID: ${ users.id }</p>`);//undefined because of many users
+        document.write(`<p> Users ID[0].NAME: ${ users[0].name }</p>`);//undefined because of many users
+        document.write(`<p> Users ID[0].EMAIL: ${ users[0].Email }</p>`);//undefined because of many users
+        document.write(`<p> Users ID[0] Age: ${ users[0].age}</p>`);//undefined because of many users
+        document.write(`</hr>`);
+
+
+        for(i=0; i< users.length; i++){
+            document.write(`<h3> id = ${users[i].id}</h3>`);
+            document.write(`<h3> NAME = ${users[i].name}</h3>`);
+            document.write(`<h3> Email = ${users[i].emai}</h3>`);
+            document.write(`<h3> Age = ${users[i].age}</h3>`);
+        }
+
+        document.write(`<h3>Example-1</h3>`);
+
+        users.forEach(element => {
+            document.write(element,"<br>");
+            document.write(element.id,"<br>");
+            document.write(element.name,"<br>");
+            document.write(element.email,"<br>");
+            document.write(element.age,"<br>");
+
+        });
+
+        document.write(`<h3>Example-2</h3>`);
+
+
+        users.forEach(function(item) {
+            document.write(item,"<br>");
+            document.write(item.id,"<br>");
+            document.write(item.name,"<br>");
+            document.write(item.email,"<br>");
+            document.write(item.age,"<br>");
+
+        });
+
+
+ </script>
+</body>
+</html>

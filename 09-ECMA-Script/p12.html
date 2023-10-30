@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA-SCRIPT</title>
+</head>
+<body>
+    <center>
+        <h1>ECMA-SCRIPT -6 Class</h1>
+    </center>
+    <hr>
+
+    <script>
+        //ecma script 6 class -> group of objects (state [var]& behavviours[methods/functios])
+
+        class User{
+            constructor(){
+                this.name ="Raju";//state
+            }
+
+            print(){
+                document.write(`<h1> Hi ${this.name}, welcome to javascript</h1>`)
+            }
+            sayHi(){
+                document.write(`<h1> Say hi to ${this.name}, welcome to javascript</h1>`)
+            }
+        }
+
+        let x = new User();//creating instance /ref to class
+        x.print();
+        x.sayHi();
+    </script>
+</body>
+</html>

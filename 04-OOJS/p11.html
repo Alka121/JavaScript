@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>
+            Obeject Entries
+        </h1>
+    </center>
+
+    <script>
+        //its return an array of object properties 
+        
+        
+        const user ={
+            name:"raj",
+            email:"raj@gamil.com",
+            mob:"246577898",
+            age:23
+        };
+
+        console.log('object=', user);
+        let entries=Object.entries(user);
+        console.log(`typeof(entries)=`,typeof(entries));
+        console.log("entries=", entries);
+        
+        }
+
+    </script>
+</body>
+</html>

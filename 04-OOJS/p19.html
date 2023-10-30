@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Accesor properties(get and set)</h1>
+        <p>consider we have 2functions inside an object,one to set the value and another to get the valuefrom it</p>
+    </center>
+    <hr>
+
+    <script>
+
+var user ={
+    name:"Alka",
+    surName:"methew",
+    email:"Alka@gmail.com"
+};
+
+Object.defineProperty(user,'fullname',{
+
+get:function(){
+    return this.name + " " + this.surName
+}
+});
+
+console.log('USER:',user);
+
+console.log('FullName=', user.fullname)
+
+user.surName="Bengluru";
+console.log('fullNmae=',user.fullName);//AlkaBengaluru
+
+console.log(user,"user");
+
+user.name = "tejas";
+console.log('fullName=', user.fullName);
+console.log(user,"user");
+    </script>
+</body>
+</html>

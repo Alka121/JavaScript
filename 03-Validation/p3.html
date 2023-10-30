@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>EMAIL VALIDATION</h1>
+    </center>
+    <hr>
+
+    <form action="" id="my-form">
+        <label for="">Enter the email</label>
+        <input type="text" placeholder="password" email="password" id="password">
+        <button onclick="validate()">SUBMIT USER</button><br>
+        <strong id="error"></strong>
+    </form>
+
+
+    <script>
+
+        function validate() {
+            event.preventDefault()
+            let password = document.getElementById("password").value;
+            console.log(password);
+            if (!password) {
+                document.getElementById("error").innerText = "Please enter a password"
+                document.getElementById("error").style.color = "red";
+            } else {
+                if (password.length < 5 || password.length > 8) {
+                    document.getElementById("error").innerText = "Invalid password"
+                    document.getElementById("error").style.color = "green";
+                } else {
+
+                    let flag = false;
+                    for (let i = 0; i < password.length; i++) {
+                        if (password[i] == " ") {
+                            flag = true
+                        }
+                    }
+                    if (flag == tr) {
+
+                        document.getElementById("error").innerText = "Invalid email"
+                        document.getElementById("error").style.color = "green";
+
+                    }
+
+                }
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

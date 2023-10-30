@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>Data Type Conversion</h1>
+    </center>
+    <hr>
+
+    <script>
+            let str ="123";
+            document.write(typeof(str)+"</br>");//outputs strings
+             
+            let num = Number(str);//become number 123
+            document.write(typeof num +"</br>");//outputs number
+
+            var number1 = Number("10.5");
+            document.write(typeof(number1)+"<br>");//output:number
+
+            var x ="123.343";
+            var y ="1245.6420578654";
+            var z ="Apple";
+
+            document.write(`<h3>x data type is :${typeof(x)} </h3>`);
+            document.write(`<h3>y data type is :${typeof(y) } </h3>`);
+            document.write(`<h3>z data type is :${typeof(z)}</h3>`);
+
+            var a=Number(x);
+            document.write(`<h3>Number: ${a} </h3>`);
+
+            var a1=parseInt(x); //int value
+            document.write(`<h3>ParseInt: ${a1} </h3>`);
+            
+            var a2=parseFloat(x);//decimal  value
+            var a3=parseFloat(y);//decimal  value
+
+            document.write(`<h3>parseFloat a2 = ${a2} </h3>`);
+            document.write(`<h3>parseFloat a3 = ${a3} </h3>`);
+
+        </script>
+        <script>
+            let yy=1245.6770578654;
+            document.write(`<h3>y variable value is :${yy} </h3>`);            
+            document.write(`<h3>y variable value is :${yy.toFixed(1)} </h3>`);            
+            document.write(`<h3>y variable value is :${yy.toFixed(2)} </h3>`);            
+            document.write(`<h3>y variable value is :${yy.toFixed(3)} </h3>`);            
+            document.write(`<h3>y variable value is :${yy.toFixed(4)} </h3>`);            
+            document.write(`<h3>y variable value is :${yy.toFixed(5)} </h3>`);  
+            
+            
+            Number(true);//return 1
+            Number(flase);//return 0
+            Number(null);//return 0
+            Number(" 123 ");//return 123
+            Number(" ");//return 0
+            Number("");//return 0
+            Number("123e-1");//return 12.3
+            Number("0xFF");//return 255(hexadecimal representation)
+            Number("Undefined");//return NAN Not A Number
+            Number("null");//return NAN 
+            Number("Hellow world!");//return NAN 
+
+
+
+
+
+
+        </script>     
+   
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <center>
+        <h1>OBJECT</h1>
+    </center>
+    <hr>
+    <script>
+        function sample(param){
+
+        }//Function
+        let x = []; //Array
+        let y = {}; //Object
+    </script>
+
+    <script>
+        var user = {
+            //key:value,=> property 
+            name:"raj",
+            email:"raj@gmail.com",
+            age:33,
+            isView:true,
+            hobbies:["driving","riding"]
+        };
+
+        console.log('user =',user);
+
+        document.write(`<h3> name = ${user}</h3>`);//con't distuctre object = [object object]
+
+        document.write(`<h3> name = ${user.name}</h3>`);
+        document.write(`<h3> name = ${user.['email']}</h3>`);
+
+        var colors = ["red","blue", "green"];
+        document.write(`<h3> colors = ${colors}</h3>`);
+        console.log('colors =',colors);
+
+        user.hobbies.array.forEach(function(x){
+            document.write(`<h3 style="color:red;"> hobbies = ${x}<h3>`);
+        });
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Validation</title>
+</head>
+<body>
+    <center>
+        <h1>USERNAME Validation</h1>
+    </center>
+    <hr>
+
+    <form>
+        <label for="">Enter Name:</label>
+        <input type="text" placeholer="user Name" name="" id="userName" minlength="5"
+        maxlength="15">
+        <strong id="error"></strong>
+        <button type="submit">SUBMIT USER</button>
+    </form>
+
+    <script>
+        if(lengthofname==0){
+        document.getElementById("userName").innerHTML = "Please enter user Name";
+        document.getElementById("userName").style.backgroundColor = "red";
+        document.getElementById("userName").style.color = "white";
+    }
+    else{
+        document.getElementById("userName").style.backgroundColor = "blue";
+        document.getElementById("userName").style.color = "white";
+    }
+    </script>
+</body>
+</html>

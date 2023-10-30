@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENT</title>
+    <style>
+        #txt{
+            background-color: teal;
+            color:#fff;
+            padding:12px;
+            width: 50%;
+            height:500px;
+            overflow:auto;
+        }
+        h4{
+            padding:10px;
+            background-color:crimson;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>onmousewheel() and onscroll()</h1>
+    </center>
+
+    <h4 id="output"></h4>
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelhandler()">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos dolorem exercitationem dolore deleniti non quisquam omnis quaerat aliquid aliquam! Dolorem optio rerum quibusdam id, perspiciatis illo inventore nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cum nobis ea. Optio qui sapiente dolorem vero omnis laborum fuga eos! Dolor, ex dicta. Voluptate exercitationem ea iste optio. Obcaecati.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam numquam cum exercitationem alias magnam at! Modi sed sequi veritatis recusandae quidem quam facilis temporibus nihil, quae dolores? Suscipit, laudantium?
+        </p>
+
+
+    </div>
+
+    <script>
+         function wheelhandler(){
+            let element = document.getElementById("txt");
+
+            document.getElementById("output").innerHTML = element.scrollTop + "  px";
+         }
+    </script>
+</body>
+</html>

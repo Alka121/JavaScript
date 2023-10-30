@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Contructor methods(ES-5)</h1>
+    </center>
+    <hr>
+
+    <script>
+        //constructor followes function and object
+        //name of cunstructor first letter start with upperecase
+        //cunstructor properties create using 'this'
+        //create an instence to cunstructoer using'new'
+        //constructor can not return;
+
+        function user(){
+            this.name = "sonu";
+            this.email = "sonu@gmail.com",
+            this.age =22;
+            let a=12;
+
+        }
+
+        //intance-> it is variable we provide permission to access the properties of cunstructor
+
+        let x = new User();
+
+        console.log('cunstructer instance=', x);
+
+        document.write(`<h1>name= ${x.name}</h1>`)
+        document.write(`<h1>email= ${x.email}</h1>`)
+        document.write(`<h1>age= ${x.age}</h1>`)
+    </script>
+</body>
+</html>

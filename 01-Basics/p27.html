@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Basics</title>
+</head>
+<body>
+    <center>
+        <h1>scope</h1>
+    </center>
+    <script>
+        /*var is weeker signal and always have global scope*/
+        /*
+        let and const are block scope variables
+        */
+
+        let x=15;
+
+        if(x>10) {
+
+            var a=155;//global
+            let b=122;//block,(reassign the value)
+            const c=144;//block(fixed value - cann't re assign the value)
+
+            document.write(`<h3>LOCAL X (block scope)= ${x}</h3>`);//block scope
+            document.write(`<h3>LOCAL A (block scope)= ${a}</h3>`);//block scope
+            document.write(`<h3>LOCAL B (block scope)= ${b}</h3>`);//block scope
+            document.write(`<h3>LOCAL C (block scope)= ${c}</h3>`);//block scope
+        }
+        document.write(`<h3>LOCAL X (Global scope)= ${x}</h3>`);//block scope
+        document.write(`<h3>LOCAL A (Global scope)= ${a}</h3>`);//block scope
+        document.write(`<h3>LOCAL B (Global scope)= ${b}</h3>`);//block scope
+        document.write(`<h3>LOCAL C (Global scope)= ${c}</h3>`);//block scope
+    </script>
+</body>
+</html>

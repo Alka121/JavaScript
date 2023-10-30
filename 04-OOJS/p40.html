@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Get And Set Method</h1>
+    </center>
+    <hr>
+
+    <script>
+        class car{
+            constructor(){
+                this.title;//will not used to call 
+
+            }
+            //get to return the vale
+            get title(){
+                return `My car title is = ${this._name}`;//_name => alins property to title
+            }
+
+            //set to assign the value;
+            set title(tt){
+                 this._name = tt;
+            }
+        }
+         let car = new car();
+         car.title = "Mahindra Thar";
+         document.write(`<h1>$car{car.title}</h1>`);
+
+         /*car.set Title('Maruthi');
+         document.write(`<h1>{car.getTitle()}</h1>`);*/
+
+
+    </script>
+</body>
+</html>

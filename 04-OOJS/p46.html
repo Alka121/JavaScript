@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Java script Polymorphism</h1>
+        <p>Its provides a way to perform a single action in diffrent forms.it provides an ability to call the same method on different JS Object.</p>
+
+    </center>
+    <hr>
+    <script>
+        class A{
+            constructor(){
+                Display(){
+                    document.write("this is A Class...!")
+                }
+            }
+        }
+        class B extends A{
+            constructor(){
+                super();
+            }
+            Display(){
+                document.write("this is B Class...!")
+            }
+            
+        }
+        let b= new B();
+        b.Display();
+
+
+    </script>
+
+    <h3>javascript Polimorphism Example -02...!</h3>
+    <script>
+    class C{
+        constructor(){
+            Display(){
+                document.write("this is C Class...!")
+            }
+        }
+    }
+    class D extends C{
+        constructor(){
+            super();
+        }
+        Display(){
+            document.write("this is D Class...!")
+        }
+        
+    }
+    let c= new C();
+    c.Display();
+
+    let d= new D();
+    d.Display();
+
+    let e = [new C(), newD()];
+    consol.log(e);
+    consol.log(typeof e);
+
+    e.forEach(mes=>{
+        mes.Display();
+    });
+    
+</script>
+</body>
+</html>

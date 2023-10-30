@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced</title>
+</head>
+<body>
+    <center>
+        <h1>addEventListener </h1>
+    </center>
+    <hr>
+    <script>
+        //Selecting button element
+        var btn = document.getElementById("myBtn");
+
+        //defining custom functions;
+        function sayHello(){
+            alert("hi, how are you doing...!");
+        }
+        //sayHello();
+
+        function setHoverColor(){
+            btn.style.background = "red";
+
+        }
+        //setHoverColor();
+
+        function setNormalColor(){
+            btn.style.background = "";
+        }
+
+        //setNormalColor();
+
+
+        btn.addEventListener('click',sayHello);
+        btn.addEventListener('mouseHover',setHoverColor);
+        btn.addEventListener('mouseleave',setNormalColor);
+        //btn.addEventListener(' click mouseleave',sayHello);
+
+
+
+    </script>
+</body>
+</html>

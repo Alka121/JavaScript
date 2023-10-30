@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+    .banner{
+        background: url(../images/mob.jpg);
+        background-size: cover;
+    }
+    .container {
+        width: 90%;
+        margin: 20px;
+        height:100%;
+        background-color: rgba(255, 228, 196, 0.5);
+    }
+    h1{
+        color: black;
+    }
+    input {
+      width: 70%;
+      
+    }
+    button {
+      padding: 10px 20px;
+      font-size: medium;
+      background-color: aquamarine;
+    }
+    #dot {
+      width: 60px;
+    }
+    #zero,
+    #clear {
+      width: 100px;
+    }
+  }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .banner{
+        background: url(../images/tab.png) no-repeat;
+        background-size: cover;
+    }
+    .container {
+        width: 50%;
+    }
+    input {
+      width: 80%;
+    }
+    button {
+      padding: 20px 30px;
+      font-size: medium;
+    }
+    #dot {
+      width: 60px;
+    }
+    #zero,
+    #clear {
+      width: 150px;
+    }
+}

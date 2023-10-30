@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Basics</title>
+    <style>
+        div{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Use switch key = add,sub,mul,div,rem a and b</h1>
+    </center>
+    <hr>
+    
+     <div>
+        <labal for="operator"><b>Choose An Operation</b></labal>
+        <select name="operator" id="operator">
+           <option vlue="select">Select</option>
+           <option vlue="add">Addition</option>
+           <option vlue="sub">Substraction</option>
+           <option vlue="add">Multiplication</option>
+           <option vlue="add">Division</option>
+           <option vlue="add">Modulus</option>
+        </select><br><br>
+        <labal for="a">Enter the Value of a:</labal>
+        <input id="a" type="number"><br><br>
+
+        <labal for="b">Enter the Value of b:</labal>
+        <input id="a" type="number"><br><br>
+     </div>
+     
+    <!-- <button type="button" onsubmit="codeHandler(event)">calculate the code</button> -->
+    <input type="submit" onsubmit="codeHandler(event)">
+    <button>Reset</button>
+  
+    <h1 id="ans"></h1>
+
+
+    <script>
+      function codeHandler(event){
+        event.preventDefault();
+        let operator = document.getElementById("operator").value;
+        let num1 = Number(document.getElementById("a").value);
+        let num2 = Number(document.getElementById("b").value);
+        document.write("num1", num1);
+
+      }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Event</title>
+</head>
+<body>
+    <center>
+        <h1>Video Event</h1>
+    </center>
+    <hr>
+
+    <h1 id="result"></h1>
+    <video controls height="500px" width="50%"
+        src="Assets/media/v2.mp4" onplay="play()" onpause="pause()" onvolumechange="change()" onseeking="seeking()">
+    </video>
+
+    <script>
+        /*function play(){
+            document.getElementById("result").innerHTML = "the video is playing";
+            document.getElementById("result").style.color = "blue";
+        }
+        function pause(){
+            document.getElementById("result").innerHTML = "the video has paused";
+            document.getElementById("result").style.color = "green";
+        }
+        function change(){
+            document.getElementById("result").innerHTML = "the video volume has changed";
+            document.getElementById("result").style.color = "red";
+        }
+        function seeking(){
+            document.getElementById("result").innerHTML = "the video has seeking";
+            document.getElementById("result").style.color = "teal";
+        }*/
+        var result = document.getElemrntById("result");
+        function play(){
+            result.innerHTML = "started playing video";
+            result.style.color = "green";
+        }
+        function pause(){
+            result.innerHTML = "started video has paused";
+            result.style.color = "red";
+        }
+        function change(){
+            result.innerHTML = "the video volume has changed";
+            result.style.color = "blue";
+        }
+        function seeking(){
+            result.innerHTML = "the video has seeking";
+            result.style.color = "yellow";
+        }
+
+
+        
+    </script>
+</body>
+</html>

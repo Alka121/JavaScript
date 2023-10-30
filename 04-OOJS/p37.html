@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1></h1>
+    </center>
+
+    <script>
+         //super class
+         class Materials {
+            constructor(x,y){
+                this.bric = x;
+                this.cement = y;
+
+            }
+            getMaterialInfo(){
+                return `Material Info Brics`
+            }
+         }
+         // base class
+         class Bulding extends Materials{
+            constructor(a,b,c){
+                super(a,b);//a=x; b=y;
+                this.sand =c;//own prop of base class
+            }
+            get MaterialInfo (){
+                document.write(`<p>${super.getMaterialInfo()}</p>`);
+                return `The sand info = ${this.sand}loads.`;
+            }
+         }
+         
+         let p = new Building(300,20,2);
+
+         document.write(`<h1>${p.getMaterialInfo()}</h1>`);
+    </script>
+</body>
+</html>

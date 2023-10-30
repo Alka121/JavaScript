@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JAvascript</title>
+</head>
+<body>
+    <center>
+        <h1>CLOUSER FUNCTION(inner function)</h1>
+        <p>Clouser function (Still confused concept):clouser means that an inner function  always has acccess to the vars and parameter of its outer function</p>
+    </center>
+    <hr>
+
+    <script>
+        //callback function 
+        //setInterval(()=>{},100);
+        //array.forEach(element => {});
+
+        //closer Function
+
+        //Exampl-01
+        function OuterFunction(){
+            var outerVariable = 100;
+            
+            function InnerFunction(){
+                document.write("<br> InnerFunction :" + outerVariable + "</br><br>");
+
+            }
+            InnerFunction();
+
+        }
+        OuterFunction();
+
+        //Example-02
+        function counter1(){
+             let counter = 0;
+
+             function IncreaseCounter(){
+                return counter +=1;
+            }
+            return IncreaseCounter()
+        }
+        document.write( counter1() );
+        
+    </script>
+</body>
+</html>

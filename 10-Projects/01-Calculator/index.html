@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/media.css">
+</head>
+
+<body>
+    <section class="banner">
+        <center>
+            <div class="container">
+                <h1>CALCULATOR-PROJECT</h1>
+            
+            <input type="text" name="result" id="result" placeholder="Result">
+            <!--For table-->
+                <table>
+                    <tr>
+                        <th><button type="button" onclick="getValueFromButton('7')">7</button></th>
+                        <th><button type="button" onclick="getValueFromButton('8')">8</button></th>
+                        <th><button type="button" onclick="getValueFromButton('9')">9</button></th>
+                        <th><button type="button" onclick="getValueFromButton('/')">/</button></th>
+                    </tr>
+                    <tr>
+                        <th><button type="button" onclick="getValueFromButton('4')">4</button></th>
+                        <th><button type="button" onclick="getValueFromButton('5')">5</button></th>
+                        <th><button type="button" onclick="getValueFromButton('6')">6</button></th>
+                        <th><button type="button" onclick="getValueFromButton('*')">*</button></th>
+                    </tr>
+                    <tr>
+                        <th><button type="button" onclick="getValueFromButton('1')">1</button></th>
+                        <th><button type="button" onclick="getValueFromButton('2')">2</button></th>
+                        <th><button type="button" onclick="getValueFromButton('3')">3</button></th>
+                        <th><button type="button" onclick="getValueFromButton('-')">-</button></th>
+                    </tr>
+                    <tr>
+                        <th><button type="button" onclick="getValueFromButton('.')">.</button></th>
+                        <th colspan="2"><button id="zero" type="button" onclick="getValueFromButton('0')">0</button></th>
+                        <th><button type="button" onclick="getValueFromButton('+')">+</button></th>
+                    </tr>
+                    <tr>
+                        <th><button type="button" onclick="getValueFromButton('%')">%</button></th>
+                        <th colspan="2"><button id="clear" type="button" onclick="clearValue()">Clear</button></th>
+                        <th><button type="button" onclick="finalResult()">=</button></th>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </section>
+   <script>
+        /*
+        function addFun(){
+            let a = (Number(document.getElementById("text-1")).value);
+            let b = (Number(document.getElementById("text-2")).value);
+            let sum = a+b;
+            document.getElementById("result").innerHTML ;
+        }
+        addFun();
+
+        function subFun(){
+            let a = (Number(document.getElementById("text-1")).value);
+            let b = (Number(document.getElementById("text-2")).value);
+            let sub = a-b;
+            document.getElementById("result").innerHTML ;
+        }
+        subFun();
+
+        function mulFun(){
+            let a = (Number(document.getElementById("text-1")).value);
+            let b = (Number(document.getElementById("text-2")).value);
+            let mul = a*b;
+            document.getElementById("result").innerHTML ;
+        }
+        mulFun();
+
+        function divFun(){
+            let a = (Number(document.getElementById("text-1")).value);
+            let b = (Number(document.getElementById("text-2")).value);
+            let div = a/b;
+            document.getElementById("result").innerHTML ;
+        }
+        divFun();
+
+        function modFun(){
+            let a = (Number(document.getElementById("text-1")).value);
+            let b = (Number(document.getElementById("text-2")).value);
+            let mod = a%b;
+            document.getElementById("result").innerHTML;
+        }
+        modFun();*/
+
+        function getValueFromButton(val) {
+            document.getElementById("result").value += val;
+        }
+        function clearValue() {
+            document.getElementById("result").value = "";
+        }
+        function finalResult() {
+            var result = eval(document.getElementById("result").value);
+            document.getElementById("result").value = result;
+        }
+
+    </script>
+</body>
+
+</html>

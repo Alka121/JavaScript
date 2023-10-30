@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <center>
+            <h1>EMAIL VALIDATION</h1>
+        </center>
+        <hr>
+
+        <form action="">
+            <label for="">Enter User Name :</label>
+            <input type="text" placeholder="User Email" name="email" id="email">
+            <button onclick="userHandler()"></button>
+        </form>
+
+        <script>
+            let userHandler = function (e) {
+                e.preventDefault();
+                let email = document.getElementById("email").value;
+                let status = document.getElementById("status");
+
+                let regex = /^\S+@\S\.\S+$/; //Example: admin@gmail.com
+
+                if (email.length === 0) {
+                    status.innerHTML = "Please Enter Email";
+                    status.style.color = "orangered"
+                } else {
+                    if (regex.test(email) === false) {
+                        status.innerHTML = "Invalid Email";
+                        status.style.color = "orangered"
+                    }else{
+                        status.innerHTML = "Valid Email";
+                        status.style.color = "green"
+                    }
+                }
+            }
+        </script>
+    </body>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <center>
+        <h1>window.close() and window.open()</h1>
+    </center>
+    <hr>
+
+    <button onclick="openHandler()">Open</button>
+    <button onclick="closeHandler()">Close</button>
+
+    <script>
+        var webstats;
+
+        function openHandler(){
+            //alert('open Handler Function');
+            webStats = open('https://javascriptinfo.com');//to open new tab
+        }
+        function closeHandler(){
+            //alert('Close Handler Function');
+            webStates.close();
+
+        }
+
+    </script>
+</body>
+</html>

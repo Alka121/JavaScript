@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>JAvascript  Encapsulation</h1>
+        <p>
+            It is process of building the data with the function acting on that data.It allows us to control the data Validate it.
+        </p>
+    </center>
+    <hr>
+    <details>
+        <summary>
+            <b>Points to remember..!</b>
+        </summary>
+            <ul>
+                <li>Use var keyword to make data member private.</li>
+                <li>USe setter method to set the data and get method to get the data.</li>
+            </ul>
+        
+    </details>
+    <p><b>Encapsulation allow us to handle  an object using the following properties.</b></p>
+    <p><b>Read/Write-</b> Here ,we use setter method to write the data and getter methods read that data.</p>
+    <p><b>Read Only-</b>In this case ,we use getter methods only</p>
+    <p><b>Write Only-</b>In this case ,we use setter methods only</p>
+<hr>
+
+<script>
+    class student{
+        constructor(){
+            let firstName;
+            let lastName;
+            let marks;
+            let mobile;
+
+        }
+        getFirstName(){
+            return this.firstName;
+
+        }
+        setFirstName(firstName1){
+            this.firstName = firstName1;
+
+        }
+        getLastName(){
+            return this.lastName;
+
+        }
+        setLastName(LastName1){
+            this.lastName = lastName1;
+
+        }
+
+        getFullName(){
+            return this.firstName + " " + this.lastName;
+        }
+
+        getMarks(){
+            return this.marks;
+
+        }
+        setMarks(Marks1){
+        
+            //this.marks = marks1;
+
+            if(marks1 < 0 || marks1 > 100 ){
+                alert("Invalid Marks");
+
+            }
+            else{
+                this.marks = marks1;
+            }
+
+        }
+        getMobile(){
+            return this.mobile;
+
+        }
+        setMobile(Mobile1){
+            this.mobile = mobile1;
+
+        }
+
+    }
+    let student = new student ();
+    student.setFirstName('Be-practical');
+    documen.write(`<p>${student.getFirstName()}</p>`)
+
+    student.setLastName('Tch-Solution');
+    documen.write(`<p>${student.getLastName()}</p>`)
+
+    documen.write(`<p>${student.getFullName()}</p>`)
+
+
+    
+</script>
+</body>
+</html>

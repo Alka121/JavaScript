@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA-SCRIPT</title>
+</head>
+<body>
+    <center>
+        <h1>Map() constructor</h1>
+    </center>
+    <hr>
+    <p>Amap is constructor (basic mapping of key and values)</p>
+    <p>MAps are diffrent than an Object in that their keys can be anything(primitive values as well as object) not just string and simbols.</p>
+    <hr>
+
+    <script>
+        var x = new Map();//instance
+
+        /*
+        instance.set("Property","value")
+        instance.get("Property")*/
+
+        x.set("id",1232);
+        x.set("title","javascript");
+        x.set("duration", "1Month");
+        x.set("isEnabled",true);
+
+        console.log(x);//structure of out put will be associative set{ key => value}
+
+        console.log('id =', x.get('id'));
+        console.log('title =', x.get('title'));
+        console.log('duration =', x.get('duration'));
+
+        document.write(`<h3> ${x.get("id")}</h3>`)
+        document.write(`<h3> ${x.get("title")}</h3>`)
+        document.write(`<h3> ${x.get("duration")}</h3>`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <center>
+        <h1>Open and Close</h1>
+    </center>
+
+    <button type="button" onclick="openWindow();">Open Window</button>
+    <button type="button" onclick="closeWindow();">Close Window</button>
+ 
+    <script>
+        let myWindow;
+        let windowProps = "width=300,height=300,top=200,left=300,toolbar=yes,scrollable,resizable=yes";
+
+        function openWindow(){
+            //mywindow = window.ope("https://be-practical.com");//newtab
+            myWindow= window.open("https://be-practical.com","",windowProps);
+        }
+        function closeWindow(){
+            myWindow.close();/*close the newly open tag*/
+        }
+    </script>
+</body>
+</html>

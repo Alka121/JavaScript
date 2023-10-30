@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>USERNAME VALIDATION</h1>
+    </center>
+    <hr>
+
+    <form action="" id="my-form" onsubmit="userHandler(event)">
+        <label for="">Enter User Name</label>
+        <input autocomplete="off" type="text" placeholder="User Name" name="UserName" id="userName">
+        <button onclick="validate()">SUBMIT USER</button><br>
+        <strong id="error"></strong>
+    </form>
+
+
+    <script>
+
+       /*  Did by Self */
+
+       /*  function validate() {
+            event.preventDefault()
+        let userName = document.getElementById("userName").value;
+            console.log(userName);
+
+        if(!userName || userName == " "){
+            document.getElementById("error").innerText = "Please enter a username"
+            document.getElementById("error").style.color = "red";
+        }else if(userName.length < 5 || userName.length > 15){
+            document.getElementById("error").innerText = "Invalid Username";
+            document.getElementById("error").style.color = "green"
+        } */
+
+
+        
+        if(userName.length === 0){
+            document.getElementById("error").innerText = "Please enter a username";
+            document.getElementById("error").style.color = "red";
+        }else{
+            if(userName.length < 5 || userName.length > 15){
+            document.getElementById("error").innerText = "Invalid Username";
+            document.getElementById("error").style.color = "green";
+        }
+        else{
+            document.getElementById("error").innerText = "Invalid Username";
+            document.getElementById("error").style.color = "green"
+        }
+    }
+    </script>
+</body>
+</html>

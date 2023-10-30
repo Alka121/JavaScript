@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Prototype Object</h1>
+        <p>Prototype Object to aquire properties and features from one an other.</p>
+
+        <strong>Syntax:</strong>
+        <p>ClassName.prototype.methodName</p>
+    </center>
+    <hr>
+
+    <script>
+        function Employee(firstName, lastName){
+            this.firstName1 = firstName;
+            this.lastName1 = lastName;
+
+            //this.fullName1 = function(){
+            //return this.firstName1 + "  " + this.lastName1;
+        //}
+
+
+        }
+
+        Employee.prototype.fullName = function(){
+            return this.firstName1 + "  " + this.lastName1;
+        }
+        let emp = new Employee('HTML', 'CSS');
+
+        document.write(emp.firstName1+"<br>");
+        document.write(emp.lastName1+"<br>");
+        document.write(emp.fullName());
+
+    
+        
+
+    </script>
+
+    <h1>Example-2</h1>
+    <script>
+        class Admin{
+            constructor(firstName,lastName){
+                this.fn = firstName;
+                this.ln = lastName;
+
+            }
+
+        }
+        let admin = new Admin("Arjun", "Pratha");
+        Admin.prototype.result = function(){
+            return this.fn + " " + this.ln;
+
+
+        }
+        document.write(`<p>Result Function: ${admin.result()}</p>`);
+    </script>
+</body>
+</html>

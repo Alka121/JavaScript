@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Basics</title>
+</head>
+<body>
+    <center>
+        <h1>Array</h1>
+    </center>
+    <hr>
+    <!--
+            Array->is a group of value of similer type
+            type:
+            1.Litral type(single)
+            a.Array Litral
+            b.array using constructor--
+            c.array as constructor parameter--
+            2.Object array
+            3.JSON(javascript object notation)array(reponse of REST(representation state transfer))API-->
+
+    <script>
+        
+    //Array literal
+    var num = [12,2,33,44,55,66];/*numbers*/
+    document.write(`<h3> ${ num }</h3>`);
+    document.write(`<h3> ${ num[4] }</h3>`);//arrName[index]
+
+    var user = ['ram','Venu','saurav','suma','nandini'];/*strings*/
+    document.write(`<h3> ${ user }</h3>`);
+    document.write(`<h3> ${ user[2] }</h3>`);//arrName[index]
+
+    var arr = [true,124,"admin@gmail.com",123.343];/*mix type*/
+    document.write(`<h3> ${ arr }</h3>`);
+    document.write(`<h3> ${ arr[0] }</h3>`);//arrName[index]
+
+    for(let i=0; i< user.length; i++){
+        document.write(`<h3 style='color:oranged;'> ${ user[i]}</h3>`);
+    }
+    
+    </script>
+</body>
+</html>

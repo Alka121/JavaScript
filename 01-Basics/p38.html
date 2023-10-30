@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Basics</title>
+</head>
+
+<body>
+    <center>
+        <h1>Array Using </h1>
+    </center>
+    <hr>
+
+    <script>
+        //ref/instance=>x
+        var x = new Array();
+        document.write(`<p>x is : ${typeof (x)}</p>`);
+
+        //assign the value:
+        x[0] = "blue";
+        x[1] = "red";
+        x[2] = "black";
+        x[3] = "Crimson";
+
+        let arr = ["blue", "red", "black", "crimson"];
+        document.write(`<p>x is : ${arr}</p>`);
+
+        /*for(let index = 0; index<array.length; index++){
+    
+        }*/
+        /*array.foreach(element=>{
+    
+        });*/
+
+        /* array.forEach(function(param){
+            //param=>index
+        });*/
+        //using for loop;
+        for (let i = 0; i < arr.length; i++) {
+            document.write(`<p>arr is : ${arr[i]}</p>`);
+        }
+        //using while loop:
+        let arr1 = ["blue", "red", "black", "crimson"];
+        document.write(`<p>x is : ${arr1}</p>`);
+        let i = 0;
+        while (i < arr1.length) {
+            document.write(`<p>arr1 is : ${arr1[i]}</p>`);
+            i++;
+        }
+
+        //using do while loop;
+        let a = 0;
+        do {
+            document.write(`<p>arr1 is : ${arr1[a]}</p>`);
+            a++;
+        }
+        while (a < arr1.length);
+
+    </script>
+</body>
+
+</html>

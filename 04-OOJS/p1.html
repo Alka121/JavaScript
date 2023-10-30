@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>JAva script Object</h1>
+    </center>
+    <hr>
+
+    <ol>
+        <li>Litral type(single)</li>
+        <ul>
+            <li>Object Litral</li>
+            <li>Creating instance of object directly(using constructor method)</li>
+            <li>Using an object constructor(using cunstructor parameter)</li>
+        </ul>
+        <li>Object Array</li>
+        <li>JSON(JAVA SCRIPT OBBJECT NOTATION)Array(Response of rest[Representational state transfer])API</li>
+    </ol>
+<hr>
+<hr>
+<center>
+    <h1>Litral Object</h1>
+    <p>key: value => Property of an Object.</p>
+</center>
+
+<p><stronge>Syntax:</stronge></p>
+
+<pre>
+    let litralObjectName = {
+        "key1" = "value1",
+        "key2" = "value2",
+        "key3" = "value3",
+        "key4" = "valueN",
+    };
+
+    console.log(litralObjectName);
+    console.log(typeof(litralObjectName));
+    console.log(litralObjectName.key1);
+
+</pre>
+<hr>
+
+<script>
+    let test = "hello";
+    document.write(`<h3>type of test = ${typeof(test)}</h3>`)
+    document.write(`<h3> Test = ${test}</h3>`)
+
+    let car={
+        'model': 2023,
+        "color":'red',
+        'brand': "ETIOS",
+        'company' : 'toyota',
+        'isRunnable': true
+    };
+
+    document.write(`<h3>CAR = ${car}</h3>`)//[onject object]
+    document.write(`<h3>CAR TYPEOF = ${typeof car}</h3>`);
+    document.write(`<h3>CAR Model = ${car.model}</h3>`)//[onject object]
+    document.write(`<h3>CAR COLOR = ${car['color']}</h3>`)//[onject object]
+    document.write(`<h3>CAR BRAND = ${car.brand}</h3>`)//[onject object]
+    document.write(`<h3>CAR Company = ${car.compony}</h3>`)//[onject object]
+    document.write(`<h3>CAR Runnable = ${car.isRunnable}</h3>`)//[onject object]
+</script>
+</body>
+</html>

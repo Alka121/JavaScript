@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>Write to protect the values</h1>
+    </center>
+    <hr>
+
+    <script>
+        var user = {
+            email:"Alka@gamil.com"
+        };
+
+        object.defineproperty(user,'name',{value:"John"});
+        writable:ture  //true->wrtitable ,false->readable,(write protect default)
+
+        console.log("Before=",user);
+        console.log(user.name);
+
+        user.name = 'SONY';
+
+        console.log("After =",user);
+        console.log(user.name);
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced</title>
+</head>
+<body>
+    <center>
+        <h1>Generator Function</h1>
+    </center>
+    <hr>
+    <h2>Javascript function</h2>
+
+   <p>1)Local function=functionA(){}</p>
+   <p>2)Expression Function = let A = function(){}</p>
+   <p>3)Arrow Function =let A() => {}</p>
+   <p>4)callback Function =forEach(function(item){});</p>
+   <p>5)closer Function=function A(){ function B(){} B();}</p>
+   <p>6)Anonymous Function=()();</p>
+   <p>7)Lamda Function = A = (x) => 100 + x;</p>
+   <p>8)Generator Function = function* A(){ yield "A"; yield "B"}</p>
+
+   <script>
+    function A(){
+        let a=10, b=20, sum;
+        sum=a+b;
+
+        return sum;
+        return a;
+        console.log(sum);
+    }
+    document.write(A());
+
+
+    function* users(){
+        //yeild is kind of like return 
+        //return x returns the value of x,but yeild x return function ,
+        yield "Raju";
+        yield "Mahesh";
+        yield "Ranjitha";
+        yield "Savitha";
+        yield "Venkatesh";
+    }
+    console.log('users Function = ',users())
+    console.log('users typeof = ',typeof(users()))
+
+    for(let item of users()){
+        document.write(`<h3>${item}</h3>`)
+    }
+    users();
+
+   </script>
+</body>
+</html>

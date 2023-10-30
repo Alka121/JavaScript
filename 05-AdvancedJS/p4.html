@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced</title>
+</head>
+<body>
+    <center>
+        <h1>Lamda function</h1>
+    </center>
+    <hr>
+    <h2>Javascript function</h2>
+
+   <p>1)Local function=functionA(){}</p>
+   <p>2)Expression Function = let A = function(){}</p>
+   <p>3)Arrow Function =let A() => {}</p>
+   <p>4)callback Function =forEach(function(item){});</p>
+   <p>5)closer Function=function A(){ function B(){} B();}</p>
+   <p>6)Anonymous Function=()();</p>
+   <p>6)Lamda Function = A = (x) => 100 + x;</p>
+
+   <script>
+    //(params) => statement
+
+    //function A(){return 10 + 20 } document.write(A());
+
+    let sum = (x) => 100 + x;
+    document.write(`<h1> Sum = ${ sum(20)}</h1>`)
+   </script>
+</body>
+</html>

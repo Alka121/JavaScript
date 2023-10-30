@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+<body>
+    <center>
+        <h1>Merging Two Or more than Two Array.</h1>
+    </center>
+    <hr>
+
+    <script>
+        document.write("<h4>Array...!<h4>");
+        let pets = ["cat", "dog", "Parrot"];
+        let wild = ["tiger","Wolf", "Zebra"];
+        let bugs = ["ant", "Bee"];
+
+        document.write("Pets =", pets + "<br>");
+        document.write("Wild =", wild + "<br>");
+        document.write("Bugs =", bugs + "<br>");
+
+
+        let animal = pets.concat(wild,bugs);
+        document.write("Animal = ", animal + "<br>");
+        document.write(typeof(animal) + "<br>");
+
+
+    </script>
+</body>
+</html>
